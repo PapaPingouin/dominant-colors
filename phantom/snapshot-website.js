@@ -1,6 +1,11 @@
 // takes a snapshot of the website
 
-url = 'http://www.facebook.com'
+var args = require('system').args;
+var url  = args[1];
+
+//url = 'http://www.facebook.com'
+
+console.log("url - " + url);
 var page = require('webpage').create();
 page.settings.viewportSize = { width: 1920, height: 1280 };
 
