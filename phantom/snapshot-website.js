@@ -11,7 +11,7 @@ page.settings.viewportSize = { width: 1920, height: 1280 };
 
 page.open(url, function (status) {
  if (status !== 'success') {
-   console.log('Unable to load BBC!');
+   console.log('Unable to load url @' + url);
    phantom.exit();
     } else {
         window.setTimeout(function () {
