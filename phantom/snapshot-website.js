@@ -15,7 +15,7 @@ page.open(url, function (status) {
    phantom.exit();
     } else {
         window.setTimeout(function () {
-            page.render('screenshot.png');
+            page.render('screenshot.jpg', { format: "jpg", quality: 50 });
             phantom.exit();
         }, 2000);
     }
